@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
   def index
   # render :plain => "Hola" 	Una forma de hacerlo
   # render plain: "Hola"
+  
   end
 
   def vista
