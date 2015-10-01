@@ -17,19 +17,24 @@
 			<div class="login">
 			  <h2>Login</h2>
 				<form action="/login" method="post">
-					<input type="text" placeholder="Correo Electronico">
-					<input type="password" placeholder="Contraseña">
-					<input type="submit" placeholder="Iniciar Sesion">
+					<input class="completo" type="text" placeholder="Correo Electronico">
+					<input class="linea" type="password" placeholder="Contraseña"> <!--
+				-->	<input class="boton" type="submit" value="Iniciar Sesion">
+				    <label> <!--El for necesita el nombre del campo que queremos afectar, sino se hace de esta forma -->
+				         <input type="checkbox" name="remember_me">
+				         Recordar mis datos
+				    </label> <!--
+				    --> <a href="/vista">Olvidaste tu contraseña</a>
 				</form>
 			</div>
 
 			<div class="sign">
  				<form action="/sign" method="post">
- 				    <h2>Eres nuevo en Twitter<span>   Sign Up</span></h2>
-                    <input typ='text' placeholder="Nombre Completo">   
-			      	<input type="text" placeholder="Correo Electronico">
-					<input type="password" placeholder="Contrasena">
-					<input type="submit" placeholder="Iniciar Sesion">
+ 				    <h2>Eres nuevo en Twitter</h2>
+                    <input class="completo" type="text" placeholder="Nombre Completo">   
+			      	<input class="completo" type="text" placeholder="Correo Electronico">
+					<input type="password" placeholder="Contrasena" class="completo">
+					<input class="boton" type="submit" value="Registrarse a Twitter">
 				</form>
 			</div>
 
